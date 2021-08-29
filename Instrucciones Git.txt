@@ -1,0 +1,52 @@
+- Establecer conexión entre repositorio local y repositorio web
+
+1. Crear una carpeta en una dirección de interés
+2. Copiar la dirección del repositorio local.
+3. Accedemos al repositorio:
+	cd <dir_rep_local>
+	cd C:\Users\juand\Documents\Cuero	(ejemplo)
+4. Inicializar el repositorio:
+	git init
+5. Establecer conexión
+	git remote add origin <url>
+
+- Seguridad GitHub (Token -> contraseña solicitada para conectar repositorio web con local)
+1. Acceder a cuenta de GitHub
+2. Abrimos 'settings'
+3. Abrimos 'Account settings/Developer settings'
+4. Accedemos a 'Personal access tokens'
+5. Crear token personal (personal access token)
+
+
+
+- Subir contenido -> "Push"
+
+1. Abrir consola
+	- Windows: Símbolo del sistema.
+	- Mac y Linux: Terminal
+2. Copiar la dirección del repositorio local.
+3. Accedemos al repositorio:
+	cd <dir_rep_local>
+	cd C:\Users\juand\Documents\Cuero	(ejemplo)
+4. (opcional) checkear diferencias entre repositorio local y web
+	git status
+5. Añadir los nuevos documentos (archivos)
+	git add <nom_archivo>
+	git add .	(Subir todos los archivos)
+6. Adicionar comentarios a los nuevos archivos que se añadirán
+	git commit -m "comentario.."
+7. Subir contenido al repositorio web
+	git push origin master
+
+- Bajar contenido -> "Pull"
+
+1. Abrir consola
+	- Windows: Símbolo del sistema.
+	- Mac y Linux: Terminal
+2. Copiar la dirección del repositorio local.
+3. Accedemos al repositorio:
+	cd <dir_rep_local>
+	cd C:\Users\juand\Documents\Cuero	(ejemplo)
+4. Establecer conexión si no existe
+5. Bajar los archivos con el comando:
+	git pull origin master
